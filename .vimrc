@@ -15,7 +15,6 @@ if g:WINDOWS
 endif
 " }
 
-map <c-n> :NERDTreeToggle<cr>
 map <tab> :NERDTreeToggle<cr>
 
 let mapleader = '`'
