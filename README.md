@@ -27,8 +27,13 @@ Or copy and paste the following into your terminal/shell:
 
 If you're using Windows, change all occurrences of `~/.vim` to `~\vimfiles`.
 
+### 5. Download & Copy plug.vim to autoload dir.
+```sh
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
 
-### 5. Install syntastic as a Pathogen bundle
+### 6. Install syntastic as a Pathogen bundle
 
 You now have pathogen installed and can put syntastic into `~/.vim/bundle` like
 this:
@@ -50,10 +55,10 @@ following:
 4. Have permissions to access all of these directories.
 
 
-### 6. Install Plugins
+### 7. Install Plugins
 
 Launch vim and run :PluginInstall
 
 To install from command line: vim +PluginInstall +qall
 
-### 7. (optional) For those using the fish shell: add set shell=/bin/bash to your .vimrc
+### 8. (optional) For those using the fish shell: add set shell=/bin/bash to your .vimrc
