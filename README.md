@@ -5,7 +5,12 @@
 
 ### 1. setup colors
 
-Copy the file molokai.vim on your .vim/colors folder.
+Copy the file molokai.vim on your .vim/colors folder on mac or ubantu.
+
+when os is centos then:
+```sh
+ cp micvim/molokai.vim /usr/share/vim/vim74/colors
+```
 
 
 ### 2. setup config
