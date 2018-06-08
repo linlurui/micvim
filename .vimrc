@@ -17,7 +17,35 @@ endif
 
 map <tab> :NERDTreeToggle<cr>
 
+" 关闭NERDTree快捷键
+map <leader>t :NERDTreeToggle<CR>
+" 显示行号
+let NERDTreeShowLineNumbers=1
+let NERDTreeAutoCenter=1
+" 是否显示隐藏文件
+let NERDTreeShowHidden=1
+" 设置宽度
+let NERDTreeWinSize=31
+" 在终端启动vim时，共享NERDTree
+let g:nerdtree_tabs_open_on_console_startup=1
+" 忽略一下文件的显示
+let NERDTreeIgnore=['\.pyc','\~$','\.swp']
+" 显示书签列表
+let NERDTreeShowBookmarks=1
+
 let mapleader = '`'
+
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ "Unknown"   : "?"
+    \ }
 
 "set statusline=%#warningmsg#
 "set statusline=%{SyntasticStatuslineFlag()}
@@ -206,6 +234,7 @@ filetype off     " 必须
 "将Vundle加入运行时路径中(Runtime path)
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+call vundle#rc()
 
 " 使用Vundle管理插件，必须
 Plugin 'gmarik/Vundle.vim'
