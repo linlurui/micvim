@@ -1,6 +1,10 @@
 # micvim
-
-
+</p>
+    <img align="right" src="https://github.com/linlurui/entityQueryable/blob/master/pay5.jpg" alt="捐赠给作者"  width="200">
+    <p align="right">
+        <em>捐赠给作者</em>
+    </p>
+</p>
 ## Installation
 
 ### 1. setup colors
